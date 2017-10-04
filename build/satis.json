@@ -1,0 +1,33 @@
+{
+    "name": "My Composer Satis",
+    "homepage": "http://localhost",
+    "repositories": [
+      { "type": "package",
+        "package": {
+          "name": "muplugin/wp-super-cache-cli",
+          "version": "1.0.0",
+          "type": "wordpress-muplugin",
+          "dist": {
+            "type": "zip",
+            "url": "https://github.com/wp-cli/wp-super-cache-cli/archive/master.zip"
+          },
+          "source": {
+            "type": "git",
+            "url": "https://github.com/wp-cli/wp-super-cache-cli",
+            "reference": "origin/master"
+          },
+          "require" : {
+            "composer/installers" : "~1.0"
+          }
+        }
+      }
+    ],
+    "require-all": true,
+    "archive": {
+      "directory": "dist",
+      "format": "tar",
+      "prefix-url": "http://localhost",
+      "skip-dev": true
+    }
+  }
+  
